@@ -1,0 +1,236 @@
+:root {
+    --color-principal: #ffffff;      
+    --color-secundario: #00ff15;    
+    --color-texto: #000000;         
+    --color-fondo: #ffffffd7;         
+    --color-fondo-claro: #807c7c;   
+    --color-blanco: #d8d8d8;
+  }
+  
+  
+  body {
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-texto);
+    animation: backwards;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(20, 0, 197, 0.3);
+  }
+  
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
+    z-index: 1000;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #000000; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    align-items: center;
+  }
+  
+  .company_logo {
+    max-height: 80px;
+  }
+
+  .header__nav a {
+    margin-left: 20px;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  .header__nav a:hover {
+    color: var(--color-principal);
+  }
+  
+  
+  .main__hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+    background: url('imagenes/fondo-hero.jpg') center/cover no-repeat;
+    color: var(--color-negro);
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+  }
+  
+  .main__title {
+    color: rgb(255, 251, 251);
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .main__description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  .proyectos {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--color-fondo-claro);
+    border-radius: 12px;
+  }
+  
+  .menu__title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--color-texto);
+  }
+  
+  .portafolio__GRID {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .portafolio__card {
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(155, 87, 87, 0.08);
+    overflow: hidden;
+    background: var(--color-blanco);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .portafolio__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+  .portafolio__card_imagen{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .proyecto-card__name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin: 15px 0 8px;
+    color: var(--color-principal);
+  }
+  
+  .proyecto-card__description {
+    font-size: 1rem;
+    padding: 0 15px 15px;
+    color: #000000;
+    font-weight: 400;
+  }
+  .presentacion{
+    width: 90%;
+    max-width: 1100px;
+    background-color: #fff;
+    padding: 20px;
+    border: 7px solid rgb(3, 3, 3);
+    border-radius: 20px;
+    line-height: 1.5;
+    margin-left: 340px
+}
+.presentacion_bla {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .presentacion_ble{
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(155, 87, 87, 0.08);
+    overflow: hidden;
+    background: var(--color-blanco);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .portafolio__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+  .portafolio__card_imagen{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .proyecto-card__name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin: 15px 0 8px;
+    color: var(--color-principal);
+  }
+  
+  .proyecto-card__description {
+    font-size: 1rem;
+    padding: 0 15px 15px;
+    color: #000000;
+    font-weight: 400;
+  }
+  .footer {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 15px;
+      width: 70%;
+    }
+}
